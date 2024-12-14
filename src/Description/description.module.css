@@ -1,0 +1,20 @@
+.descTitle {
+    text-align: center;
+    font-weight: 400;
+font-size: 70px;
+line-height: 1.14815;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #f0f0f0;
+}
+
+.descText {
+    text-align: center;
+    font-weight: 400;
+font-size: 20px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #f0f0f0;
+
+}

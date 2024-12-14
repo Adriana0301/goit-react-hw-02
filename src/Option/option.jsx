@@ -1,11 +1,16 @@
-const Option = ({onClick, onReset}) => {
+import {
+    optionWrapper,
+    optionButton,
+  } from "../Option/option.module.css";
+
+const Option = ({onClick, onReset, totalFeedback}) => {
     return (
-        <ul>
-            <li><button type="button" onClick={() => onClick("good")}>Good</button></li>
-            <li><button type="button" onClick={() => onClick("neutral")}>Neutral</button></li>
-            <li><button type="button" onClick={() => onClick("bad")}>Bad</button></li>
-            <li><button type="button" onClick={() => onReset("bad")}>Reset</button></li>
-        </ul>
+        <div className={optionWrapper}>
+            <button className= {optionButton} type="button" onClick={() => onClick("good")}>Good</button>
+            <button className= {optionButton} type="button" onClick={() => onClick("neutral")}>Neutral</button>
+            <button className= {optionButton} type="button" onClick={() => onClick("bad")}>Bad</button>
+            {totalFeedback > 0 && (<button className= {optionButton} type="button" onClick={() => onReset("bad")}>Reset</button>)}
+        </div>
     )
 }
 
